@@ -12,15 +12,24 @@ header {
 }
 header h1 {
     margin: 0;
-    font-size: 60px;
+    font-size: 3.5rem;
 }
 
 nav a {
     color: white;
     margin: 0 10px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 1.6rem;
 }
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* .container {
+    padding: 320px;
+} */
+
 .big {
     font-size: 6rem;
     margin: 0;
@@ -39,20 +48,6 @@ body {
     color: #fff;
     text-align: center;
 }
-
-.container {
-    padding: 20px;
-}
-
-/* h1 {
-    font-size: 2.5rem;
-    margin: 0;
-    color: #fff;
-}
-
-h1 span {
-    color: #ff5c5c;
-} */
 
 p {
     font-size: 1.6rem;
@@ -95,63 +90,176 @@ p {
     transform: scale(1.1);
 }
 
-.stats {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-}
-
-.stat {
-    font-size: 1.2rem;
-}
-
-.stat span {
-    font-size: 2rem;
-    display: block;
-    color: #ff5c5c;
-}
 
 /* New styles */
 .profile-pic-container {
     position: absolute;
-    right: 40px;
+    right: 5vw;
     top: 45%;
     transform: translateY(-50%);
    
 }
 
 .profile-pic {
-    width: 390px;
-    height: 370px;
+    width: 20vw;
+    height: 20vw;
     border-radius: 50%;
     border: 3px solid #ff8c00;
     
 }
 
-.progress-bar-container {
-    margin: 30px auto;
-    width: 80%;
-}
 
-/* .progress-bar {
-    background: #ddd;
-    border-radius: 25px;
-    height: 20px;
-    overflow: hidden;
-    position: relative;
-}
 
-.progress {
-    background: linear-gradient(90deg, #ff8c00, #e60073);
+/* .about {
+    font-size: 2.5rem;
+    padding-bottom: 400px;
+    color: #fff;
+    margin: 0;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center;
     height: 100%;
-    width: 70%;
-    transition: width 0.3s ease;
-} */
+    text-align: center;
+    padding-left: 380px;
+    white-space: nowrap;
+    display: inline-block; */
 
-.new-stats {
-    margin-top: 30px;
+/* } */ 
+/* Container for image and text */
+.image-container {
     display: flex;
-    justify-content: center;
-    gap: 40px;
+    align-items: center;
+    /* Vertically align the image and text */
+    justify-content: flex-start;
+    /* Align both items to the left */
+    gap: 20px;
+    /* Adds space between the image and text */
+    padding-top: 200px;
+    /* Adjust as needed */
+}
+
+/* Image styling */
+.image {
+    flex: 0 0 auto;
+    /* Prevent image from shrinking */
+    text-align: center;
+}
+
+.picture {
+    width: 250%;
+    /* Adjust the size of the image */
+    height: 60%;
+    border-radius: 10px;
+    /* Optional: rounded corners */
+    object-fit: cover;
+    /* Maintain aspect ratio */
+}
+
+/* Info container styling */
+/* Make .info a grid container */
+.info {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Single column layout */
+    grid-gap: 20px;
+    /* Space between items */
+    width: 40%;
+    padding-left: 680px;
+    padding-bottom: 5px;
+}
+
+/* Heading style */
+.about {
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 0;
+    text-align: left;
+}
+
+/* Paragraph styling */
+.information {
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.8;
+    text-align: left;
+    margin: 0;
+    /* font-weight: bold; */
+    width: 1150px;
+    
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+    }
+
+    .big {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    .buttons {
+        padding-top: 60px;
+    }
+
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        /* left: 0; 
+        top: 40%;  */
+    }
+
+    .picture {
+        width: 80%; 
+        height: auto;
+                    
+    }
+    .information {
+        font-size: 1rem;
+        margin: 0 10px;
+    }
+    .about {
+        font-size: 2rem;
+        margin-top: 10px;
+        }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    .big {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .buttons {
+        padding-top: 40px;
+    }
+
+    .image-container {
+        left: 0; /* Keep it on the far left */
+        top: 30%; /* Adjust vertical positioning for mobile */
+    }
+
+    .picture {
+        width: 100%; /* Make the image full width on mobile */
+    }
 }
