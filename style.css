@@ -26,9 +26,6 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* .container {
-    padding: 320px;
-} */
 
 .big {
     font-size: 6rem;
@@ -90,8 +87,6 @@ p {
     transform: scale(1.1);
 }
 
-
-/* New styles */
 .profile-pic-container {
     position: absolute;
     right: 5vw;
@@ -109,66 +104,35 @@ p {
 }
 
 
-
-/* .about {
-    font-size: 2.5rem;
-    padding-bottom: 400px;
-    color: #fff;
-    margin: 0;
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center;
-    height: 100%;
-    text-align: center;
-    padding-left: 380px;
-    white-space: nowrap;
-    display: inline-block; */
-
-/* } */ 
-/* Container for image and text */
 .image-container {
     display: flex;
     align-items: center;
-    /* Vertically align the image and text */
     justify-content: flex-start;
-    /* Align both items to the left */
     gap: 20px;
-    /* Adds space between the image and text */
     padding-top: 200px;
-    /* Adjust as needed */
 }
 
-/* Image styling */
 .image {
     flex: 0 0 auto;
-    /* Prevent image from shrinking */
     text-align: center;
 }
 
 .picture {
     width: 250%;
-    /* Adjust the size of the image */
     height: 60%;
     border-radius: 10px;
-    /* Optional: rounded corners */
     object-fit: cover;
-    /* Maintain aspect ratio */
 }
 
-/* Info container styling */
-/* Make .info a grid container */
 .info {
     display: grid;
     grid-template-columns: 1fr;
-    /* Single column layout */
     grid-gap: 20px;
-    /* Space between items */
     width: 40%;
     padding-left: 680px;
     padding-bottom: 5px;
 }
 
-/* Heading style */
 .about {
     font-size: 2.5rem;
     color: #fff;
@@ -176,16 +140,112 @@ p {
     text-align: left;
 }
 
-/* Paragraph styling */
 .information {
     font-size: 1.2rem;
     color: white;
     line-height: 1.8;
     text-align: left;
     margin: 0;
-    /* font-weight: bold; */
     width: 1150px;
     
+}
+
+.skills-heading h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.skills-heading {
+    margin-top: 150px;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.skills-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+.skill-box {
+    width: 45%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.skill-box ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.skill-box li {
+    color: #fff;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+.skill-box li::before {
+    content: "• ";
+    color: #fff;
+    margin-right: 10px;
+}
+
+.skill-box h2 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.skill-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.skill-box:active {
+    transform: scale(0.95);
+}
+
+skill-box ul.Technincal {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill-box ul.Technincal p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.skill-box ul.Technincal li {
+    font-size: 16px;
+    margin-left: 20px;
+    margin-bottom: 8px;
+}
+
+.skill-box ul.Technincal>li:first-child {
+    margin-top: 5px;
+}
+
+#soft-skills ul li {
+    margin-bottom: 20px;
+    font-size: 20px;
 }
 
 /* Media Queries for responsiveness */
@@ -255,11 +315,11 @@ p {
     }
 
     .image-container {
-        left: 0; /* Keep it on the far left */
-        top: 30%; /* Adjust vertical positioning for mobile */
+        left: 0; 
+        top: 30%; 
     }
 
     .picture {
-        width: 100%; /* Make the image full width on mobile */
+        width: 100%; 
     }
 }
