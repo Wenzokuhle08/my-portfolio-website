@@ -27,4 +27,19 @@ document.addEventListener("DOMContentLoaded", () => {
             box.style.transform = 'scale(1)'; 
         });
     });
+    const form = document.querySelector("form[name='contact']");
+    const thankYouMessage = document.getElementById("thank-you-message");
+    const formContainer = document.querySelector(".contact");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault(); 
+
+        thankYouMessage.style.display = "block";
+
+        formContainer.querySelector("form").style.display = "none";
+
+        setTimeout(function() {
+            form.submit();
+        }, 2000); 
+    });
 });
