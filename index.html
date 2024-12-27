@@ -196,7 +196,7 @@
 
     <div class="contact" id="hire me">
         <h2 id="contact">Contact Me</h2>
-        <form name="contact" method="POST" data-netlify="true"></form>
+        <form name="contact" method="POST" data-netlify="true" id="contact-form">
         <!-- <form action="https://formspree.io/wnmaziya08@gmail.com" method="POST"> -->
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
@@ -208,9 +208,10 @@
             <input type="hidden" name="form-name" value="contact">
         </form>
         <div id="thank-you-message" style="display: none;">
-            <p>Thank you! Your message has been sent.</p>
+            <p class="thanks">Thank you! Your message has been sent.</p>
         </div>
     </div>
+
 
     <footer>
         <ul>

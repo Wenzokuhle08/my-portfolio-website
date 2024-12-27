@@ -35,8 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
         event.preventDefault(); 
 
         thankYouMessage.style.display = "block";
+        form.style.display = "none";
 
-        formContainer.querySelector("form").style.display = "none";
+        // formContainer.querySelector("form").style.display = "none";
 
         setTimeout(function() {
             form.submit();
