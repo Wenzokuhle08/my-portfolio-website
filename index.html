@@ -196,7 +196,8 @@
 
     <div class="contact" id="hire me">
         <h2 id="contact">Contact Me</h2>
-        <form action="https://formspree.io/wnmaziya08@gmail.com" method="POST">
+        <form name="contact" method="POST" data-netlify="true"></form>
+        <!-- <form action="https://formspree.io/wnmaziya08@gmail.com" method="POST"> -->
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             <label for="email">Email:</label>
@@ -204,6 +205,7 @@
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="5" required></textarea>
             <button type="submit">Send</button>
+            <input type="hidden" name="form-name" value="contact">
         </form>
     </div>
 
