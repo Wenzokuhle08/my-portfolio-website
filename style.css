@@ -135,13 +135,19 @@ p {
 }
 
 .info {
-    display: grid;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* padding: 10px; */
+    box-sizing: border-box;
+    padding-left: 280px;
+    /* display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
     width: 90%;
     max-width: 1150px;
     padding-left: 680px;
-    padding-bottom: 5px;
+    padding-bottom: 5px; */
 }
 
 .about {
@@ -156,9 +162,11 @@ p {
     color: white;
     line-height: 1.8;
     text-align: left;
-    margin: 0 auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    /* margin: 0 auto;
     width: 150%;
-    max-width: 1150px;
+    max-width: 1150px; */
     
 }
 
@@ -588,7 +596,8 @@ ul li a:hover {
     }
     .information {
         font-size: 1rem;
-        margin: 0 10px;
+        line-height: 1.5;
+        /* margin: 0 10px; */
     }
     .about {
         font-size: 2rem;
