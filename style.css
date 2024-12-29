@@ -40,7 +40,8 @@ nav a:hover {
 .highlight {
     color: #e60073;
     font-weight: bold;
-    font-size: 5rem;
+    font-size: 7rem;
+    display: flex;
 }
 
 body {
